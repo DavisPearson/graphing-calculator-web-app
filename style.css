@@ -1,0 +1,38 @@
+* {
+  background-color: black;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 20;
+}
+.graph-interface {
+  background-color: white;
+}
+.input-area {
+  margin: auto;
+  width: 75%;
+  height: 150px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  grid-template-areas:
+    ". B B B C"
+    "A B B B ."
+    ". B B B .";
+}
+.Y-equals {
+  grid-area: A;
+  background-color: white;
+  justify-self: center;
+}
+
+.input-box {
+  background-color: white;
+  text-align: center;
+  font-size: 25px;
+  grid-area: B;
+}
+.slider {
+  grid-area: C;
+}

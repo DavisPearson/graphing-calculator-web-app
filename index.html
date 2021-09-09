@@ -9,19 +9,47 @@
   <body>
     <div class="app">
       <canvas class="graph-interface" id="graph-interface"></canvas>
-      <script src="script.js"></script>
       <div class="input-container">
         <div class="input-area">
-          <h1 class="Y-equals">Y =</h1>
-          <textarea
-            name="input-box"
-            class="input-box"
-            id="input-box"
-            cols="30"
-            rows="10"
-          ></textarea>
+          <p class="Y-equals" id = 'yEquals'></p>
+          <div class = 'button-box'>
+            <button class="b1" onclick="buttonPress('+')">+</button>
+            <button class="b2" onclick="buttonPress('-')">-</button>
+            <button class="b3" onclick="buttonPress('7')">7</button>
+            <button class="b4" onclick="buttonPress('8')">8</button>
+            <button class="b5" onclick="buttonPress('9')">9</button>
+            <button class="b6" onclick="buttonPress('*')">*</button>
+            <button class="b7" onclick="buttonPress('/')">/</button>
+            <button class="b8" onclick="buttonPress('4')">4</button>
+            <button class="b9" onclick="buttonPress('5')">5</button>
+            <button class="b10" onclick="buttonPress('6')">6</button>
+            <button class="b11" onclick="buttonPress('(')">(</button>
+            <button class="b12" onclick="buttonPress(')')">)</button>
+            <button class = 'b13' onclick="buttonPress('1')">1</button>
+            <button class = 'b14' onclick="buttonPress('2')">2</button>
+            <button class = 'b15' onclick="buttonPress('3')">3</button>
+            <button class = 'b16' onclick="buttonPress(')^')">)^x</button>
+            <button class = 'b17' onclick="buttonPress('sin(')">sin(</button>
+            <button class = 'b18' onclick="buttonPress('back')">del</button>
+            <button class = 'b19' onclick="buttonPress('0')">0</button>
+            <button class = 'b20' onclick="buttonPress('X')">X</button>
+            <button class = 'b21' onclick="buttonPress('cos(')">cos(</button>
+            <button class = 'b22' onclick="buttonPress('tan(')">tan(</button>
+            <button class = 'b23' onclick="buttonPress('clear')">clear</button>
+            <button class = 'b24' onclick="buttonPress('log(')">log(</button>
+            <button class = 'b25' onclick="buttonPress('=')">=</button>
+          </div>
+          <div class ='slider-area'>
+            <input type="range" id='findValueSlider' onInput='findValue(slider.value)'>
+            <input type = 'textarea' id = 'input' class = 'slider-input' onClick='clearInput()' onChange='findValueFromInput(input.value)' ></input>
+            <input type = 'textarea' id = 'output' class = 'slider-output' ></input>
+            </div>
+          </div>
         </div>
       </div>
+      <script src="script.js"></script>
     </div>
   </body>
 </html>
+<!--create more buttons
+-->

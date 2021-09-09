@@ -1,38 +1,154 @@
 * {
-  background-color: black;
   box-sizing: border-box;
   text-align: center;
   margin: 20;
+  font-size: 20px;
+  font-family: arial;
+}
+body {
+  background-image: radial-gradient(white, rgb(10, 101, 143));
 }
 .graph-interface {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.74);
 }
 .input-area {
   margin: auto;
   width: 75%;
-  height: 150px;
-  background-color: white;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.445);
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: 20px;
+  grid-gap: 5px;
   grid-template-areas:
-    ". B B B C"
-    "A B B B ."
-    ". B B B .";
+    ". . B B B B"
+    "A A B B B B"
+    "A A B B B B"
+    "A A B B B B"
+    "A A B B B B"
+    ". . B B B B"
+    "C C C C C C";
 }
-.Y-equals {
+.slider-area {
+  grid-area: C;
+}
+.button-box {
+  grid-area: B;
+  display: grid;
+  max-width: 400px;
+  grid-template-areas:
+    "A B C D E "
+    "F G H I J "
+    "K L M N O "
+    "P Q R S T"
+    "U V W AA AB";
+}
+.button-box > button {
+  background-color: white;
+  border: 1px solid rgb(10, 101, 143);
+  border-radius: 10px;
+}
+.button-box > button:hover {
+  background-color: rgb(10, 101, 143);
+}
+.button-box > button:active {
+  background-color: rgb(255, 255, 255);
+}
+.b1 {
   grid-area: A;
-  background-color: white;
-  justify-self: center;
 }
-
-.input-box {
-  background-color: white;
-  text-align: center;
-  font-size: 25px;
+.b2 {
   grid-area: B;
 }
-.slider {
+.b3 {
   grid-area: C;
+}
+.b4 {
+  grid-area: D;
+}
+.b5 {
+  grid-area: E;
+}
+.b6 {
+  grid-area: F;
+}
+.b7 {
+  grid-area: G;
+}
+.b8 {
+  grid-area: H;
+}
+.b9 {
+  grid-area: I;
+}
+.b10 {
+  grid-area: J;
+}
+.b11 {
+  grid-area: K;
+}
+.b12 {
+  grid-area: L;
+}
+.b13 {
+  grid-area: M;
+}
+.b14 {
+  grid-area: N;
+}
+.b15 {
+  grid-area: O;
+}
+.b16 {
+  grid-area: P;
+}
+.b17 {
+  grid-area: Q;
+}
+.b18 {
+  grid-area: R;
+}
+.b19 {
+  grid-area: S;
+}
+.b20 {
+  grid-area: T;
+}
+.b21 {
+  grid-area: U;
+}
+.b22 {
+  grid-area: V;
+}
+.b23 {
+  grid-area: W;
+}
+.b24 {
+  grid-area: AA;
+}
+.b25 {
+  grid-area: AB;
+} /*
+.b20 {
+  grid-area: T;
+}
+.b20 {
+  grid-area: T;
+}*/
+
+.Y-equals {
+  grid-area: A;
+  width: 300px;
+  font-size: 40px;
+  word-wrap: break-word;
+  justify-self: center;
+}
+.slider {
+  grid-area: E;
+}
+.slider-input {
+  border: 1px solid rgb(10, 101, 143);
+  border-radius: 5px;
+}
+.slider-output {
+  border: 1px solid rgb(10, 101, 143);
+  border-radius: 5px;
 }

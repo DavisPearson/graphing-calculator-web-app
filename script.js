@@ -3,7 +3,7 @@
 const canvas = document.getElementById("graph-interface");
 c = canvas.getContext("2d");
 canvas.width = window.innerWidth * (3 / 4);
-canvas.height = window.innerHeight / 2;
+canvas.height = window.innerHeight * (5 / 8);
 
 //establishing origin as the center of the page/ including resize function, and scale of the graph
 
@@ -21,7 +21,7 @@ let userInput = "";
 const yEquals = document.getElementById("yEquals");
 addEventListener("resize", function () {
   canvas.width = window.innerWidth * (3 / 4);
-  canvas.height = window.innerHeight / 2;
+  canvas.height = window.innerHeight * (5 / 8);
   originX = canvas.width / 2;
   originY = canvas.height / 2;
   scale = canvas.width / scaleSize;
